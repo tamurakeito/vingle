@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app.dart';
-import 'config.dart';
+import 'app_config.dart';
 
 void main() {
   AppConfig.setEnvironment(Environment.prod);

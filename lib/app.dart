@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'config.dart';
+import 'app_router.dart';
+import 'app_config.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(AppConfig.welcomeText),
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: router,
+      title: AppConfig.title,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
